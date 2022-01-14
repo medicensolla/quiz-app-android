@@ -1,6 +1,12 @@
 package com.soya.quizapp
 
+import com.soya.quizapp.model.Question
+
 object Constants {
+
+    const val USER_NAME: String = "user_name"
+    const val TOTAL_QUESTIONS: String = "total_questions"
+    const val CORRECT_ANSWERS : String ="correct_answers"
 
     fun getQuestions(): ArrayList<Question> {
         val questionList = ArrayList<Question>()
@@ -15,7 +21,7 @@ object Constants {
 
         val que2 = Question(
             2, "What country does this flag belong to?",
-            R.drawable.ic_bg,
+            R.drawable.ic_flag_of_australia,
             "Angola", "Austria",
             "Australia", "Armenia", 3
         )
